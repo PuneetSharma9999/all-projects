@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puneet Sharma - Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <h1><i class="fas fa-rocket"></i> Puneet Sharma - Projects</h1>
+                <div class="header-actions">
+                    <button id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search projects...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filter-options">
+            <div class="filter-tags">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="web">Web</button>
+                <button data-filter="mobile">Mobile</button>
+                <button data-filter="api">API</button>
+                <button data-filter="design">Design</button>
+            </div>
+            <div class="sort-options">
+                <select id="sort-projects">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="name">By Name</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+            <!-- Projects will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/puneetsharma9999" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/puneetsharma999" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/_puneet99" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>© <span id="year"></span> Puneet Sharma - Projects. All deployed projects in one place.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
